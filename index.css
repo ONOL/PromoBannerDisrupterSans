@@ -164,9 +164,11 @@ ul.dropdown-menu{
 
 
 #underline{
-  text-decoration: underline;
+  border-bottom: 3px solid gray;
   color:gray;
   font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 2px;
 }
 
 span.woohoo-disrupt{
@@ -265,6 +267,14 @@ li.mobile-disrupter{
 
 
 @media screen and (max-width: 700px){
+
+  #underline{
+  border-bottom: 2px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
 
   #online-only{
 font-size: 10px;
