@@ -159,6 +159,14 @@ ul.dropdown-menu{
   color:black;
   font-family: sans-serif;
   text-align: center;
+  letter-spacing: 1.2px;
+}
+
+
+#underline{
+  text-decoration: underline;
+  color:gray;
+  font-weight: 500;
 }
 
 span.woohoo-disrupt{
@@ -181,66 +189,30 @@ span.use-code{
   padding:15px;
 }
 
-#line-one-left{
-  display:inline;
-  float:left;
-  color:white;
-  margin-left:15px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 20px;
-  letter-spacing: 2px;
+#online-only{
+font-size: 15px;
+letter-spacing: 1.5px;
+color:black;
+font-weight: 100;
+margin-bottom: 20px;
+}
 
+#off-all-dresses{
+font-size: 37px;
+letter-spacing: 1.2px;
+color:gray;
+font-weight: 500;
+margin-bottom: 20px;
+}
+
+#use-the-code{
+font-size: 21px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
 }
 
 
-
-#line-one-right{
-  display:inline;
-  float:right;
-  color:white;
-   margin-right:15px;
-   margin-bottom: 30px;
-  margin-right: 100px;
-  letter-spacing: 1px;
-  font-size: 15px;
-}
-
-#fourty-off{
-font-weight: 700;
-font-size: 30px;
-}
-
-#line-two-left{
-  display:inline;
-  float:left;
-  color:white;
-  margin-top: -10px;
-  margin-left:15px;
-  font-weight: 100;
-  font-size: 30px;
-  letter-spacing: 2px;
-
-}
-
-#line-two-right{
-   display:inline;
-  float:right;
-  color:white;
-     margin-right:15px;
-     margin-bottom:15px;
-   margin-right: 100px;
-
-  font-weight: 200;
-  letter-spacing: 2px;
-}
-
-.glyphicon-menu-right{
-  float: right;
-  margin-right: -60px;
-  margin-top: -15px;
-  font-size:40px;
-}
 
 #restrictions-details{
   text-decoration: underline;
@@ -253,78 +225,101 @@ font-size: 30px;
   letter-spacing: 1px;
 }
 
-.col-sm-10{
 
-    background-color: gray;
-    }
 
-    #woohoo-bottom{
-      font-weight: 600;
-    }
+
+
+
 
 
 @media screen and (max-width: 1023px){
 
- #promo-banner{
-    display:none;
- }
+#promo-banner{
+  display:none;
+  }
  
+li.mobile-disrupter{
+  text-align: center;
+  }
 
-  #disrupter{
-    display:inline;
-     background-color: gray;
-     font-family: sans-serif;
-   
+#disrupter{
+  display:inline;
+  background-color: white;
+  font-family: sans-serif;
+  }
+
+.disrupter-div{
+  background-color: white;
+  font-family: sans-serif;
   }
 }
 
 
-@media screen and (max-width: 615px){
 
-  #line-one-left{
-
-  font-size: 12px;
-
-}
-
-
-#line-one-right{
-
-  font-size: 10px;
-  margin-right: 50px;
-  margin-bottom: 10px;
-}
-
-#fourty-off{
-
-font-size: 15px;
-}
-
-#line-two-left{
-  font-size: 15px;
-  margin-top: 0px;
-}
-
-#line-two-right{
-line-height: 1.7;
-font-size: 10px;
-margin-right: 50px;
-}
-
-.glyphicon-menu-right{
-  font-size:15px;
-  margin-top: 0px;
-  margin-right: -40px;
-
-}
-
+/*
 #restrictions-details{
   font-size: 7px;
   margin-right: 50px;
+  }
+}*/
+
+
+@media screen and (max-width: 700px){
+
+  #online-only{
+font-size: 10px;
+margin-bottom: 10px;
+}
+ 
+#off-all-dresses{
+font-size: 25px;
+margin-bottom: 10px;
+}
+
+#use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+#restrictions{
+  font-size: 7px;
+  padding-top: 17px
+}
+}
+
+@media screen and (max-width: 500px){
+
+#online-only{
+font-size: 10px;
+}
+ 
+#off-all-dresses{
+font-size: 22px;
+}
+
+#use-the-code{
+font-size: 15px;
+letter-spacing: 1.2px;
+color:black;
+font-weight: 300;
+}
+
+#restrictions{
+font-size: 7px;
+}
 }
 
 
-}
+
+
+
+
+  
+
+
+
 
 
 
