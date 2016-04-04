@@ -84,7 +84,7 @@ li.dropdown:hover, li.dropdown:focus{
   font-family: sans-serif;
   font-weight: 100;
   text-shadow:none;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .navbar-default .navbar-nav>li>a:hover{
@@ -345,12 +345,12 @@ li.nav-item{
   padding-bottom: 15px;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .nav>li>a {
 color:white;
-font-size: 15px;
+font-size: 13px;
 }
 
 .nav>li>a:hover, .nav>li>a:focus {
@@ -363,6 +363,7 @@ font-size: 15px;
   display:inline-block;
   font-family: sans-serif;
   letter-spacing: 2px;
+  font-size: 13px;
 }
 
 
@@ -408,23 +409,28 @@ span.dresses{
   font-weight: 100;
   color:white;
 
+
 }
 
 li.white{
   color:white;
+  font-size: 13px;
 }
 
 li.code{
 font-weight: 100;
+font-size: 13px;
 
 }
 
 li.online{
   font-weight: 100;
+  font-size: 13px;
 }
 
 li.ends{
 font-weight: 100;
+font-size: 13px;
 }
 
 span.close-button{
