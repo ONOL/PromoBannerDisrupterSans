@@ -32,6 +32,7 @@
     display: block;
   }
   body {
+    font-family: sans-serif;
     line-height: 1;
   }
   ol, ul { 
@@ -113,6 +114,7 @@ span.woohoo-banner{
 
 
 
+
 /*DROPDOWN MENU*/
 
 ul.dropdown-menu{
@@ -120,6 +122,8 @@ ul.dropdown-menu{
   border-bottom:5px solid gray;
   border-left:5px solid gray;
   border-right:5px solid gray;
+  border-top: 3px solid gray;
+  margin-left: -230px;
 }
 
 #off{
@@ -213,7 +217,6 @@ letter-spacing: 1.2px;
 color:black;
 font-weight: 300;
 }
-
 
 
 #restrictions-details{
@@ -316,19 +319,117 @@ color:black;
 font-weight: 300;
 }
 
-#restrictions{
+#restriction{
 font-size: 7px;
 }
 }
 
 
+.navbar-default{
+  width:100%;
+}
+
+.nav-bar{
+  text-align: center;
+  font-style: 10px;
+}
+
+
+li.nav-item{
+  display:inline-block;
+  color:white;
+  font-family: sans-serif;
+  font-weight:400;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 15px;
+}
+
+.nav>li>a {
+color:white;
+font-size: 15px;
+}
+
+.nav>li>a:hover, .nav>li>a:focus {
+ background-color: gray; 
+  color:white;
+   font-weight:400;
+}
+
+.nav >li {
+  display:inline-block;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+}
+
+
+
+.take-group{
+  display:inline;
+}
+
+.lines{
+  letter-spacing: -2px;
+  font-size: 8px;
+}
+
+
+li.nav-item a:hover, li.nav-item a:focus{
+  background-color: gray; 
+  color:white;
+}
 
 
 
 
-  
+/*gets rid of background color on close button when it's clicked */
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+  background-color: gray; 
+}
 
 
+.navbar-default .navbar-collapse{
+  background-color: gray; 
+}
+
+span.woohoo-banner{
+  font-weight:700;
+}
+
+
+
+
+
+  /*new classes for individual list item styling */
+span.dresses{
+  font-weight: 100;
+  color:white;
+
+}
+
+li.white{
+  color:white;
+}
+
+li.code{
+font-weight: 100;
+
+}
+
+li.online{
+  font-weight: 100;
+}
+
+li.ends{
+font-weight: 100;
+}
+
+span.close-button{
+  display:none;
+}
 
 
 
