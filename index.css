@@ -101,6 +101,10 @@ li.dropdown:hover, li.dropdown:focus{
   text-shadow: none;
 }
 
+.x-banner{
+font-size: 18px;
+font-weight: 500;
+}
 
 
 
@@ -112,7 +116,9 @@ span.woohoo-banner{
   font-weight:500;
 }
 
-
+ul > li.off-adult-styles-banner{
+  font-weight: 700;
+}
 
 
 /*DROPDOWN MENU*/
@@ -126,27 +132,45 @@ ul.dropdown-menu{
   margin-left: -230px;
 }
 
-#off{
+.adult-off{
   padding-top: 20px;
-  font-size: 60px;
+  font-size: 42px;
   font-weight:700;
   color:gray;
   font-family: sans-serif;
   text-align: center;
 }
 
-#dresses{
+.kids-off{
   padding-top: 10px;
-  font-size: 45px;
-  font-weight:600;
+  font-size: 42px;
+  font-weight:700;
   color:gray;
   font-family: sans-serif;
   text-align: center;
-  letter-spacing: 1.4px;
 }
 
-#use-code{
-  padding-top: 30px;
+.plus{
+  padding-top: 5px;
+  font-size: 35px;
+  font-weight:700;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.styles{
+  padding-top: 5px;
+  font-size: 18px;
+  font-weight:200;
+  color:gray;
+  font-family: sans-serif;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.use-code{
+  padding-top: 25px;
   font-size: 20px;
   font-weight:200;
   color:gray;
@@ -154,11 +178,11 @@ ul.dropdown-menu{
   text-align: center;
 }
 
-#restrictions{
-  padding-top: 30px;
-  padding-bottom: 20px;
+.restrictions{
+  padding-top: 25px;
+  padding-bottom: 10px;
   font-size: 10px;
-  font-weight:100;
+  font-weight:400;
   text-decoration: underline;
   color:black;
   font-family: sans-serif;
@@ -167,16 +191,10 @@ ul.dropdown-menu{
 }
 
 
-#underline{
-  border-bottom: 3px solid gray;
-  color:gray;
-  font-weight: 500;
-  font-size: 28px;
-  letter-spacing: 2px;
-}
 
-span.woohoo-disrupt{
-  font-weight:600;
+span.x-disrupt{
+  font-weight:500;
+  font-size: 28px;
 }
 
 span.use-code{
@@ -186,7 +204,7 @@ span.use-code{
 
 /*small banner section*/
 
-#disrupter{
+section.disrupter{
   display:none;
 }
 
@@ -195,23 +213,23 @@ span.use-code{
   padding:15px;
 }
 
-#online-only{
+.online-only{
 font-size: 15px;
 letter-spacing: 1.5px;
 color:black;
 font-weight: 100;
-margin-bottom: 20px;
+margin-bottom: 10px;
 }
 
-#off-all-dresses{
+.off-all-dresses{
 font-size: 37px;
 letter-spacing: 1.2px;
 color:gray;
 font-weight: 500;
-margin-bottom: 20px;
+margin-bottom: 5px;
 }
 
-#use-the-code{
+.use-the-code{
 font-size: 21px;
 letter-spacing: 1.2px;
 color:black;
@@ -219,7 +237,7 @@ font-weight: 300;
 }
 
 
-#restrictions-details{
+.restrictions-details{
   text-decoration: underline;
   float:right;
   color:white;
@@ -230,6 +248,14 @@ font-weight: 300;
   letter-spacing: 1px;
 }
 
+span.underline{
+  border-bottom: 3px solid gray;
+  color:gray;
+  font-weight: 500;
+  font-size: 28px;
+  letter-spacing: 2px;
+  margin-bottom: 0px;
+}
 
 
 
@@ -247,7 +273,7 @@ li.mobile-disrupter{
   text-align: center;
   }
 
-#disrupter{
+section.disrupter{
   display:inline;
   background-color: white;
   font-family: sans-serif;
@@ -271,7 +297,7 @@ li.mobile-disrupter{
 
 @media screen and (max-width: 700px){
 
-  #underline{
+  span.underline{
   border-bottom: 2px solid gray;
   color:gray;
   font-weight: 500;
@@ -279,24 +305,24 @@ li.mobile-disrupter{
   letter-spacing: 2px;
 }
 
-  #online-only{
+  .online-only{
 font-size: 10px;
 margin-bottom: 10px;
 }
  
-#off-all-dresses{
+.off-all-dresses{
 font-size: 25px;
-margin-bottom: 10px;
+margin-bottom: 5px;
 }
 
-#use-the-code{
+.use-the-code{
 font-size: 15px;
 letter-spacing: 1.2px;
 color:black;
 font-weight: 300;
 }
 
-#restrictions{
+.restrictions{
   font-size: 7px;
   padding-top: 17px
 }
@@ -304,22 +330,22 @@ font-weight: 300;
 
 @media screen and (max-width: 500px){
 
-#online-only{
+.online-only{
 font-size: 10px;
 }
  
-#off-all-dresses{
+.off-all-dresses{
 font-size: 22px;
 }
 
-#use-the-code{
+.use-the-code{
 font-size: 15px;
 letter-spacing: 1.2px;
 color:black;
 font-weight: 300;
 }
 
-#restriction{
+.restriction{
 font-size: 7px;
 }
 }
@@ -438,10 +464,30 @@ span.close-button{
 }
 
 
+li.cycleme{
+  display: none;
+  width:20%;
+}
+
+@media screen and (max-width: 1286px){
+  
+  li.cycleme{
+  display: none;
+  width:24%;
+}
+
+}
 
 
 
+@media screen and (max-width: 1086px){
+  
+  li.cycleme{
+  display: none;
+  width:26%;
+}
 
+}
 
 
 

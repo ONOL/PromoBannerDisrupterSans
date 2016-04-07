@@ -59,8 +59,11 @@
       <ul class="nav nav-bar">
 
       <li class="nav-item white online">ONLINE ONLY</li>
-      <li class="white">30% OFF <span class="dresses"> DRESSES</span></li>
-      <li class="nav-item white code">USE CODE <span class="woohoo-banner"> WOOHOO</span></a></li>
+
+      <li class="cycleme white off-adult-styles-banner">30% OFF ADULT STYLES</li>
+      <li class="cycleme white off-adult-styles-banner">25% OFF KIDS & BABY STYLES</li>
+
+      <li class="nav-item white code">USE CODE <span class="x-banner"> xxxxxx</span></a></li>
       <li class="nav-item white ends">ENDS 3/30</li>
 
       
@@ -74,10 +77,13 @@
 
 
           <ul class="dropdown-menu">
-            <div id="off">30% OFF</div>
-            <div id="dresses">DRESSES</div>
-            <div id="use-code"><span class="use-code">USE CODE </span><span class="woohoo-disrupt">WOOHOO</span></div>
-            <div id="restrictions">RESTRICTIONS & DETAILS</div>
+            <div class="adult-off">25% OFF</div>
+            <div class="styles">ADULT STYLES</div>
+            <div class="plus">+</div>
+            <div class="kids-off">30% OFF</div>
+            <div class="styles">KIDS & BABY STYLES</div>
+            <div class="use-code"><span class="use-code">USE CODE </span><span class="x-disrupt">xxxxxx</span></div>
+            <div class="restrictions">Restrictions & Details</div>
           </ul>
         </li>
       </ul>
@@ -88,16 +94,16 @@
   
 </section>
 
-<section id="disrupter">
+<section class="disrupter">
 <div class= 'disrupter-div'>
 
 
 <div class='row'>
   <ul class="mobile-banner">
-  <li class="mobile-disrupter" id="online-only">ONLINE ONLY. ENDS 3/21.</li>
-  <li class="mobile-disrupter" id="off-all-dresses">10% OFF ALL DRESSES</li>
-  <li class="mobile-disrupter" id="use-the-code">USE CODE <span id="underline">xxxxxx<span></li>
-  <li><div id="restrictions">RESTRICTIONS & DETAILS</div></li>
+  <li class="mobile-disrupter online-only">ONLINE ONLY. ENDS 3/21.</li>
+  <li class="mobile-disrupter off-all-dresses">10% OFF ALL DRESSES</li>
+  <li class="mobile-disrupter use-the-code">USE CODE <span class="underline">xxxxxx<span></li>
+  <li><div class="restrictions">Restrictions & Details</div></li>
   </ul>
 
 </div>
@@ -123,13 +129,31 @@ $( "span.close-button" ).click(function() {
    $( "span.close-button" ).css( "display", "none" );
    $( "span.more" ).css( "display", "inline-block" );
 });
-
-
-
-
-
 </script>
 
+ <script>
+(function($) {
+    $.fn.seqfx = function() {
+        var elements = this,
+            l = elements.length,
+            i = 0;
+
+        function execute() {
+            var current = $(elements[i]).css("display","inline-block");;
+            i = (i + 1) % l;
+
+            current
+                .fadeIn(400)
+                .delay(1000)
+                .fadeOut(300, execute);
+        }
+        execute();
+        return this
+    };
+}(jQuery));
+
+$("li.cycleme").seqfx();
+// </script>
 
 
 </foot>
