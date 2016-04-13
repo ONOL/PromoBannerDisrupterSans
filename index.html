@@ -16,20 +16,10 @@
   <!-- Optional theme -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-
-
-  <!--  Raleway font -->
-  <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
-  <!--   Patua font  -->
-  <link href='http://fonts.googleapis.com/css?family=Patua+One' rel='stylesheet' type='text/css'>
-
   <!--  Social Media fonts  -->
   <script src='http://code.jquery.com/jquery-2.1.4.min.js'></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="owl.carousel/owl.carousel.min.css" />
 
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -42,7 +32,7 @@
 </head>
 
 <body>
-<section id="promo-banner">
+<section class="promo-banner">
 <nav class="navbar navbar-default">
   <div>
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -101,12 +91,33 @@
 <div class='row'>
   <ul class="mobile-banner">
   <li class="mobile-disrupter online-only">ONLINE ONLY. ENDS 3/21.</li>
-  <li class="mobile-disrupter off-all-dresses">10% OFF ALL DRESSES</li>
+  
+   <div class="flashing-text carousel slide" data-ride="carousel"> 
+   <li class="mobile-disrupter off-all-dresses">25% OFF ADULT STYLES</li> 
+   <li class="mobile-disrupter off-all-dresses">25% OFF ADULT STYLES</li>      
+    <li> 
+ <ul class="carousel-indicators">
+    <li data-target=".flashing-text" data-slide-to="0" class="active"></li>
+    <li data-target=".flashing-text" data-slide-to="1"></li>
+    </li>
+  </ul> 
+  </div>
+
   <li class="mobile-disrupter use-the-code">USE CODE <span class="underline">xxxxxx<span></li>
-  <li><div class="restrictions">Restrictions & Details</div></li>
+  <li>     
+
+
+  </li>
+  <li class="restrictions">Restrictions & Details</li>
+
+  
+
+  
   </ul>
 
 </div>
+
+
 
 
 
@@ -139,12 +150,15 @@ $( "span.close-button" ).click(function() {
             i = 0;
 
         function execute() {
-            var current = $(elements[i]).css("display","inline-block");;
+            var current = $(elements[i]).css({
+              "display":"inline-block",
+            });
+
             i = (i + 1) % l;
 
             current
                 .fadeIn(400)
-                .delay(1000)
+                .delay(2000)
                 .fadeOut(300, execute);
         }
         execute();
